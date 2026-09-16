@@ -86,13 +86,6 @@ The evaluation compares a generic response baseline, historical retrieval-only r
 
 
 
-\## 15. Used an LLM judge with gold labels hidden
-
-The LLM judge evaluates helpfulness, intent fit, grounding, factual safety, escalation appropriateness, professionalism, and overall pass. Gold labels were excluded from the judge prompt to reduce evaluation leakage.
-
-
-
-\## 16. Added a human audit rather than treating the LLM judge as ground truth
-
-A 30-row human audit was created from both LLM-passed and LLM-failed examples. The human audit is used as an independent quality check because LLM-based evaluation can disagree with human judgment.
+## 15. Used an LLM judge plus a human audit
+The LLM judge evaluates helpfulness, intent fit, grounding, factual safety, escalation appropriateness, professionalism, and overall pass, with gold labels hidden to reduce evaluation leakage. A 30-row human audit was also created from LLM-passed and LLM-failed examples to provide an independent quality check because LLM-based evaluation can disagree with human judgment.
 
