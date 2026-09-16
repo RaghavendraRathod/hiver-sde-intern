@@ -260,9 +260,9 @@ Therefore, the 72% result should be interpreted as the quality of the current ev
 
 
 
-The human audit was also small, so the LLM judge should not be treated as ground truth.
+The human audit was intentionally small, so the LLM judge should not be treated as ground truth. I created a 30-row human audit across the three response strategies. Because a few examples were revisited during the interactive review, the latest explicit human rating was used for each unique `(tweet_id, candidate)` pair. This produced 22 uniquely mapped human-rated rows; the remaining 8 rows were left unrated rather than inferred.
 
-
+On these 22 rows, the LLM judge and human reviewer agreed on 12/22 overall-pass decisions (54.5%), with Cohen's kappa of 0.052. Humans marked 16/22 responses as passes, while the LLM judge marked 12/22 as passes. The low agreement reinforces that the LLM judge is a diagnostic signal rather than ground truth.
 
 The golden set itself is manually constructed and has an uneven intent distribution.
 
