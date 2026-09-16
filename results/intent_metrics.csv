@@ -1,0 +1,4 @@
+model,accuracy,macro_f1,weighted_f1
+1. Majority Class Baseline,0.3,0.04195804195804196,0.13846153846153847
+2. TF-IDF + Logistic Regression Baseline,0.36,0.23966489650700176,0.36216232889917094
+3. Improved Hybrid Rule + ML Classifier,0.5,0.37695940423213153,0.4630209790209791
